@@ -1,24 +1,13 @@
-## README
+##  Taskly README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Taskly is just another to-do/task keeping application to help you keep focus.
 
-Things you may want to cover:
+* We're using the latest Rails 5 branch (5.0.0beta1) at the time of writing.
+* Currently Ruby 2.2.3 though we will try to move to 2.3.0 for production
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Also want:
+* Recurring Tasks and To-Do Lists
+* Dashboard of tasks / to-do Lists
+* Ability to drag and drop into done sections like Trello would be nice.
+* Try and implement SMS / Email notifications for upcoming tasks
