@@ -14,4 +14,16 @@
  *= require_self
  */
 
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+  @import "bootstrap-custom";
   @import "bootstrap";
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  nav {
+   margin-bottom: 1rem;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }
