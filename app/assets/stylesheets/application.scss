@@ -18,6 +18,12 @@
   @import "bootstrap-custom";
   @import "bootstrap";
 
+
+  html.turbolinks-progress-bar::before {
+   background-color: lightgreen !important;
+   height: 3px !important;
+  }
+
   body {
     font-family: 'Roboto', sans-serif;
   }
