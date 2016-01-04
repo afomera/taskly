@@ -1,0 +1,9 @@
+<h1>Your tasks</h1>
+<hr>
+<div class="col-sm-4">
+  <% @tasks.each do |task| %>
+    <h3><%= task.name %></h3><br>
+    <%= task.user.email %>
+      <hr>
+  <% end %>
+</div>

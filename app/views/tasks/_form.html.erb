@@ -1,0 +1,18 @@
+<%= form_for @task do |f| %>
+  <% if @task.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= @task.errors.count %> Error(s) prohibited this from being saved:</h2>
+			<ul>
+				<% @task.errors.full_messages.each do |msg| %>
+					<li><%= msg %></li>
+				<% end %>
+			</ul>
+		</div>
+	<% end %>
+
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: 'Name to describe your task', class: 'form-control' %>
+  <br>
+  <%= f.submit "Submit", class: 'btn btn-primary' %>
+
+<% end %>
