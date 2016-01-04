@@ -21,7 +21,7 @@
             <%= link_to "Home", root_path, class: "nav-link" %>
           </li>
 
-        <% if #user_signed_in? %>
+        <% if user_signed_in? %>
           <li class="nav-item dropdown pull-sm-right">
                 <%= link_to "#", class: 'nav-link', id: 'dropdownMenu1', data: {toggle: 'dropdown'}, aria: {haspopup: 'true', expanded: 'false'} do %>
                   Notifications <span class="label label-pill label-info">3</span>
@@ -35,21 +35,21 @@
           </li>
 
           <li class="nav-item">
-            <%= link_to "Account", root_path, class: "nav-link" %>
+            <%= link_to "Account", edit_user_registration_path, class: "nav-link" %>
           </li>
 
           <li class="nav-item">
-            <%= link_to "Sign Out", root_path, method: :delete, class: "nav-link" %>
+            <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "nav-link" %>
           </li>
 
 
         <% else %>
           <li class="nav-item">
-            <%= link_to "Sign Up", root_path, class: "nav-link" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %>
           </li>
 
           <li class="nav-item">
-            <%= link_to "Sign In", root_path, class: "nav-link" %>
+            <%= link_to "Sign In", new_user_session_path, class: "nav-link" %>
           </li>
         <% end %>
       </ul>
